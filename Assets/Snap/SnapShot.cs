@@ -18,27 +18,7 @@ public class SnapShot : MonoBehaviour
         {
             path = Application.dataPath;
         }
-        string[] split = "#C_Y_{0} 触发了".Split(new string[] { "#C_Y_{0}" }, StringSplitOptions.None);
     }
-    
-    void RegexTest()
-    {
-        string result = "";
-        //Regex r = new Regex("#L_PLAYER_{\\d?\\d*}_{\\d?\\d*}_{\\d?\\d*}");
-        Regex r = new Regex("\\d+");
-        MatchCollection mc = r.Matches("#L_PLAYER_{3}_{4}_{5},#L_PLAYER_{3}_{12}_{1},#L_PLAYER_{13}_{14}_");
-        for (int i = 0; i < mc.Count; i++)
-        {
-            result += mc[i] + " ";//匹配结果是完整的数字，此处可以不做拼接的
-        }
-        Debug.Log(result);
-    }
-	
-	// Update is called once per frame
-	void Update ()
-    {
-	
-	}
 
     void OnGUI()
     {
