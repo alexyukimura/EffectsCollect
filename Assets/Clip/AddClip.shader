@@ -53,7 +53,7 @@ Shader "ProYuki/RimAddClip"
 				v2f o = (v2f)0;
 				o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
 				//计算模型的真正世界坐标
-				o.worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
+				o.worldPos = mul(_Object2World, v.vertex).xyz;
 				o.normal = UnityObjectToWorldNormal(v.normal);
 				o.uv = v.uv;
 				return o;
