@@ -35,7 +35,7 @@ Shader "Effect/ShadowExt"
 			v2f vert(float4 vertex:POSITION){
 				v2f o;
 				o.pos = mul(UNITY_MATRIX_MVP, vertex);
-				float4 pos = mul(unity_ObjectToWorld, vertex);
+				float4 pos = mul(_Object2World, vertex);
 				pos = mul(viewMatrix, pos);
 				pos = mul(projMatrix, pos);
 				o.sproj = ComputeScreenPos(pos);
