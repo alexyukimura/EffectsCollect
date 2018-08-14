@@ -4,6 +4,9 @@ Eraser 像素剔除 </br>
 Gray UI变灰 </br>
 Projector 高效阴影 </br>
 Snap 高精度抓屏 </br>
+ClickWave </br>
+
+
 ImageShine CD和扫光 </br>
 Topameng SomeShader </br>
 
